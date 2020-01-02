@@ -1,0 +1,14 @@
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    password: secretkey
+    keyObtentionIterations: 1000
+    poolSize: 1
+    providerName: SunJCE
+    saltGeneratorClassname: org.jasypt.salt.RandomSaltGenerator
+    stringOutputType: base64
+    proxyPropertySources: false
+    
+
+variable:
+  secret-var: ENC(VMAckVUvHhbiEpU1pG4JuFyc3WWR5CJ8FkRTmpcZoow=)

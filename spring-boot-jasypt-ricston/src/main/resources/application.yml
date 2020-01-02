@@ -1,0 +1,21 @@
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    password: secretkey
+    keyObtentionIterations: 1000
+    poolSize: 1
+    providerName: SunJCE
+    saltGeneratorClassname: org.jasypt.salt.RandomSaltGenerator
+    stringOutputType: base64
+    proxyPropertySources: false
+      
+db:
+  driverclassname: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/test
+  username: root
+  password: ENC(xi6QaBqXoFzbAl2dSOZHuw==)
+  
+spring:
+  profiles:
+    active:
+    - dev,mysql
